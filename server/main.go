@@ -12,7 +12,8 @@ func main() {
 		AllowMethods: []string{"POST", "GET", "DELETE"},
 	}))
 	router.Use(middleware.LoggerWithConfig(middleware.LoggerConfig{
-		Format: "method=${method}, uri=${uri}, status=${status}\n",
+		Format: "[${status}] ${method} ${uri}\n",
+		Output: router.Logger.Output(),
 	}))
 	Routes(router)
 	router.Logger.Fatal(router.Start(":3000"))
