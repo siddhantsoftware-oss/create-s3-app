@@ -3,7 +3,7 @@ import { apiServerUrl } from "../_main";
 
 function Index() {
   const { data, isLoading } = useQuery("hello", async () =>
-    fetch(`${apiServerUrl}/hello`, {
+    fetch(`${apiServerUrl}/hello/world`, {
       headers: { Accept: "application/json" },
     }).then((res) => res.text())
   );
