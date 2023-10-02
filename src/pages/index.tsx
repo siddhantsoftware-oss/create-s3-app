@@ -16,6 +16,9 @@ function Index() {
         <div className="text-xl font-semibold">
           React JS • TypeScript • TanStack Query • GoLang • TailwindCSS
         </div>
+        <div className="mt-3">
+          <button className="bg-white px-3 py-2 rounded-md font-semibold shadow-2xl hover:shadow-xl transition">Login with Google</button>
+        </div>
       </div>
     </div>
   );
