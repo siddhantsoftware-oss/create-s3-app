@@ -1,0 +1,3 @@
+[submodule "s3-server"]
+	path = s3-server
+	url = https://github.com/siddhantsoftware-oss/s3-server
