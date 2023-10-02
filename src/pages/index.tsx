@@ -8,11 +8,17 @@ function Index() {
     }).then((res) => res.text())
   );
 
-  if (isLoading) {
-    return <div>Loading...</div>;
-  }
-
-  return <div>{data}</div>;
+  return (
+    <div className="w-[800px] flex justify-center place-items-center h-screen mx-auto text-center">
+      <div className="flex flex-col gap-y-3">
+        <div className="text-6xl font-bold">Create S3 App</div>
+        <div className="text-2xl">{isLoading ? "Loading..." : data}</div>
+        <div className="text-xl font-semibold">
+          React JS • TypeScript • TanStack Query • GoLang • TailwindCSS
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Index;
