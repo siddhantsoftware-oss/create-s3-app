@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
 import Router from "./router";
+import 'vite/client'
 
 import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient();
 
-export const apiServerUrl = "http://localhost:3000"
+export const apiServerUrl = import.meta.env.VITE_API_URL
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
