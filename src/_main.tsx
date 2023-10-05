@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./styles/index.css";
+
 import Router from "./router";
-import 'vite/client'
+
 
 import { QueryClient, QueryClientProvider } from "react-query";
 
